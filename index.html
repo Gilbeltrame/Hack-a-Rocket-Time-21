@@ -10,31 +10,34 @@
 </head>
 <body>
     <header>
-        <div class="navbar navbar-expand-sm navbar-light shadow sticky-top ">
-          <div class="container">   
-            <div style="height: 70px;">
-            </div>
-            <div class="navbar-nav" id="navbarSupportedContent">
-                <ul class="nav justify-content-end align-items-center">
-                    <li class="nav-item" >
-                        <a class="nav-link" href="#"><span class="m-2">O que é?</span></a>
-                    </li>
+        <div class="navbar navbar-expand-sm navbar-light sticky-top shadow ">
+            <div class="container">
+                
+                    <a class=" navbar-brand" href="#" id="logo">
+                        <img src="img/logo_sem_slogan-08.png" width="150px" alt="">
+                    </a>
 
-                    <li class="nav-item" >
-                        <a class="nav-link" href="#como" id="Raleway">
-                            <span class="m-2">Como Funciona?</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" href="https://bit.ly/2WtYxGn" target="blanck">
-                            <button type="button" class="btn btn-primary btn-sm" id="botao" > 
-                                <span class="m-2">Cadastre-se já</span>
-                            </button>                            
-                        </a>
-                    </li>
-                </ul>        
+                <div class="navbar-nav" id="navbarSupportedContent">
+                    <ul class="nav justify-content-flex align-items-center">
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#"><span class="m-2">O que é?</span></a>
+                        </li>
+
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#como" id="Raleway">
+                                <span class="m-2">Como Funciona?</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="https://bit.ly/2WtYxGn" target="blanck">
+                                <button type="button" class="btn btn-primary btn-sm" id="botao" > 
+                                    <span class="m-2">Cadastre-se já</span>
+                                </button>                            
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
             </div>
-          </div>
         </div>
     </header>
     
@@ -106,7 +109,17 @@
     </footer>
 </body>
 <style>
-
+.navbar-light{
+    background-color: rgba(231, 231, 231, 0.548);
+}
+.navbar-brand{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
 #textocapa{
     color: rgb(146, 145, 145);
     font-size: 45px;
