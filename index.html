@@ -47,10 +47,10 @@
                 <img src="img/IMG-02.png" width="90%">
             </div>
             <div class="col-md-7" >
-                <div class="col-sm-10">
-                    <p id="textocapa" class="lead">A<span class="text-muted" style="font-weight: bold"> plataforma</span> que vai fazer
-                        o seu <span class="text-muted" style="font-weight: bold">negócio voar</span>!</p> 
-                </div>
+                
+                    <h1 id="textocapa" class="lead">A<span class="text-muted" style="font-weight: bold"> plataforma</span> que vai fazer
+                        o seu <span class="text-muted" style="font-weight: bold">negócio voar</span>!</h1> 
+               
                 <a href="https://bit.ly/2WtYxGn" target="blanck">
                     <button type="button" class="btn btn-primary btn-md ml-3 mt-3" id="botao" > 
                         <span>Saiba mais</span>
@@ -64,8 +64,8 @@
     <section class="conteiner-fuid">
         <div id="como" class="border">
             <div class="col-md-8">
-                <div class="col-sm-10 text-right" style="display: flex; flex-direction: column; padding-bottom: 110px;">
-                    <p style="font-weight: bold;" id="textocapa" class="text-muted"> Encontre os melhores clientes!</p>
+                <div class="col-sm-10">
+                    <h1 style="font-weight: bold;" id="textocapa" class="text-muted"> Encontre os melhores clientes!</h1>
                     <p style="color: rgb(112, 112, 112); font-size: 23px;" class="lead">
                     Somos uma plataforma que encontra os clientes ideais para o seu negócio em poucos cliques.</p>
                 </div>
@@ -86,16 +86,16 @@
             <div class="col-md-5 pb-2" id="celfoto" style="display: flex; flex-direction: column; align-items: center;" >
                 <img src="img/IMG-03-Atualizada.png" width="105%">
             </div>
-            <div class="col-md-6 d-flex" style="padding-left: 80px; flex-direction: column;" >
+            <div class="col-md-6" >
                 <div>
-                    <p id="textocapa" class="lead"><span class="text-muted" style="font-weight: bold"> Fácil</span> e 
-                        <span class="text-muted" style="font-weight: bold">rápido</span> de usar</p> 
+                    <h1 id="textocapa" class="lead"><span class="text-muted" style="font-weight: bold"> Fácil</span> e 
+                        <span class="text-muted" style="font-weight: bold">rápido</span> de usar</h1> 
                 </div>
-                <div class="mt-3" style="display: flex; flex-direction: column;">
-                    <p style="color: rgb(112, 112, 112); font-size: 23px;" class="lead">
+                <div class="mt-3">
+                    <p class="lead">
                         Cadastre a sua vitrine virtual e automatize o envio de
                         novidades e descontos.</p>
-                    <p style="color: rgb(112, 112, 112); font-size: 23px;" class="lead">
+                    <p style="color: rgb(112, 112, 112);" class="lead">
                         Você também consegue gerenciar o relacionamento com os seus leads e saber quais bairros da cidade
                         têm mais interesse no seu produto.</p>
                 </div>
@@ -108,13 +108,12 @@
     <section>
         <div class="conteiner-fluid" id="video">
             <div class="mb-4">
-                <p id="textovideo" class="lead"><span style="font-weight: bold; color:#ffffff;">Assista</span> 
-                o vídeo!</p> 
+                <h1 id="textovideo" class="lead"><span style="font-weight: bold; color:#ffffff;">Assista</span> 
+                o vídeo!</h1> 
             </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YN5JLd5Ab3k" frameborder="0"
-                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                 style="border-width: 10px; border-radius: 2%;border-color: #ffffff;"
+            <div id="modura-video">
+                <iframe  src="https://www.youtube.com/embed/YN5JLd5Ab3k" frameborder="0"
+                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                  allowfullscreen></iframe>                
             </div>
                         
@@ -123,7 +122,7 @@
     
     <footer class="container-fluid" width="100%"">
        <div class="container">
-           <p class="lead mt-3" style="font-size: 15px;"> &copy; 2020 Feito com carinho pelo Time 21</p>
+           <p class="lead mt-3" style="font-size: 15px;"> &copy; 2020</p>
        </div>
     </footer>
 
@@ -145,6 +144,11 @@
 #textocapa{
     color: rgb(146, 145, 145);
     font-size: 40px;
+    margin-bottom: 1em;
+}
+
+#capa #textocapa{
+    padding-right: 3em;
 }
 #textovideo{
     color: #ffffff;
@@ -171,6 +175,11 @@
     margin: 0px 0 50px 0px;
 }
 
+#cel p{
+    color: rgb(112, 112, 112); 
+    font-size: 23px
+}
+
 #celfoto{
     margin-left: 50px;
 }
@@ -178,11 +187,17 @@
 #como {
     display: flex;
     min-height: 70vh;
+    text-align: right;
     overflow: hidden;
     align-items: center;
     flex-direction: row;
     padding: 30px 50px 20px 20px;
     margin: 30px 0 50px 0;
+}
+
+#como p{
+    color: rgb(112, 112, 112); 
+    font-size: 23px
 }
 
 #botao{
@@ -204,6 +219,15 @@
     background-image: linear-gradient(to right,rgb(112, 112, 112),#bbbbbb);
     color: #ffffff;
 }
+
+#video iframe{
+    border-width: 10px; 
+    border-radius: 2%;
+    border-color: #ffffff ;
+    width:560px; 
+    height:315px;
+}
+
 footer{
     display: flex;
     background-color: #3f3f3f;
@@ -212,6 +236,102 @@ footer{
     align-items: center;
     min-height: 12vh;
     
+}
+
+@media (max-width: 768px){
+
+    p{
+    padding-left: .7em;
+    padding-right: .7em;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .navbar-nav{
+        display: none;
+    }
+
+    #capa {
+    display: flex;
+    min-height: 70vh;
+    overflow: hidden;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    padding: 0;
+    margin:0}
+    
+    #capa button{
+        margin:5 !important;
+        margin-top: 2em !important;
+        padding-left: 4em ;
+        padding-right: 4em ;
+
+        border-radius: 10px !important;
+    }
+
+    #capa img{
+        padding-bottom: 3em;
+    }
+    
+    #textocapa{
+    font-size: 30px;
+    }
+    
+
+    #como{
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2em 0 2em 0;
+    }
+
+    #como p{
+
+    }
+
+    #cel {
+
+    min-height: 70vh;
+    overflow: hidden;
+    align-items: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 4em;
+    margin: 0;
+    }
+    #celfoto{
+        margin-left: 50px;
+    }
+
+    #video{
+        padding: 1em;
+        margin-bottom: -1em;
+    }
+
+    #video #textovideo{
+        padding-top: .8em;
+    }
+
+    #video #modura-video{
+        padding-bottom: 5em;
+    }
+    #video iframe{
+
+    border-width: 3px; 
+    border-radius: 2%;
+    border-color: #ffffff;
+    width:100%; 
+    height: 260px;
+
+}
 }
 
 
